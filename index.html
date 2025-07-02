@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abaya Qismina Dewasa Muslimah - Elegant & Luxury</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Premium Wood Case - NAVASTORE.CASE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #F8C8DC;
-            --secondary: #E2AFDE;
-            --accent: #D4A5A5;
-            --text: #5A5A5A;
-            --light: #FFF9FB;
-            --dark: #3A3A3A;
-            --gold: #D4AF37;
+            --primary: #8B5A2B;
+            --secondary: #D2B48C;
+            --accent: #A0522D;
+            --light: #F5F5DC;
+            --dark: #3E2723;
+            --text: #333333;
+            --white: #FFFFFF;
+            --sale: #E53935;
         }
         
         * {
@@ -32,115 +33,199 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 15px;
         }
         
         /* Header */
         header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            padding: 20px 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 100;
         }
         
-        .header-content {
+        .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 15px 0;
         }
         
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: var(--light);
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-        }
-        
-        .cta-button {
-            background-color: var(--accent);
-            color: white;
-            padding: 10px 25px;
-            border-radius: 30px;
+            color: var(--primary);
             text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
         }
         
-        .cta-button:hover {
-            background-color: var(--dark);
-            transform: translateY(-2px);
+        .logo i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 20px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
         }
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            padding: 60px 0;
-            text-align: center;
-            color: white;
+            position: relative;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .hero-content {
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            animation: fadeInUp 1s ease;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         
         .hero h1 {
             font-size: 42px;
+            color: var(--primary);
             margin-bottom: 20px;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            line-height: 1.2;
         }
         
         .hero p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: 0 auto 30px;
-        }
-        
-        .price-container {
-            background-color: white;
-            display: inline-block;
-            padding: 20px 40px;
-            border-radius: 10px;
+            font-size: 18px;
             margin-bottom: 30px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
         }
         
-        .original-price {
-            text-decoration: line-through;
-            color: var(--text);
-            font-size: 24px;
-        }
-        
-        .discounted-price {
-            color: var(--accent);
-            font-size: 36px;
-            font-weight: 700;
-        }
-        
-        .discount-badge {
-            background-color: var(--gold);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: 600;
+        .cta-button {
             display: inline-block;
-            margin-left: 10px;
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid var(--primary);
         }
         
-        .countdown {
-            font-size: 24px;
-            margin: 20px 0;
-            font-weight: 600;
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--primary);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 50px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--dark);
         }
         
         /* Product Gallery */
         .gallery {
-            padding: 60px 0;
-        }
-        
-        .gallery h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: var(--dark);
+            padding: 80px 0;
+            background-color: var(--light);
         }
         
         .gallery-grid {
@@ -150,72 +235,59 @@
         }
         
         .gallery-item {
-            border-radius: 10px;
+            position: relative;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        .gallery-item:hover {
-            transform: scale(1.03);
+            border-radius: 10px;
+            cursor: pointer;
+            height: 250px;
         }
         
         .gallery-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow: auto;
+        }
+        
+        .modal-content {
+            margin: auto;
             display: block;
+            max-width: 90%;
+            max-height: 90%;
+            margin-top: 50px;
         }
         
-        /* Features */
-        .features {
-            padding: 60px 0;
-            background-color: white;
-        }
-        
-        .features h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: var(--dark);
-        }
-        
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .feature-item {
-            text-align: center;
-            padding: 30px 20px;
-            border-radius: 10px;
-            background-color: var(--light);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-        
-        .feature-icon {
-            font-size: 40px;
-            color: var(--accent);
-            margin-bottom: 20px;
-        }
-        
-        .feature-item h3 {
-            margin-bottom: 15px;
-            color: var(--dark);
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
         }
         
         /* Testimonials */
         .testimonials {
-            padding: 60px 0;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-        }
-        
-        .testimonials h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
+            padding: 80px 0;
+            background-color: var(--white);
         }
         
         .testimonial-grid {
@@ -224,227 +296,364 @@
             gap: 30px;
         }
         
-        .testimonial-item {
-            background-color: white;
+        .testimonial-card {
+            background-color: var(--light);
             padding: 30px;
             border-radius: 10px;
-            color: var(--text);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 60px;
+            color: var(--primary);
+            opacity: 0.2;
+            font-family: Georgia, serif;
         }
         
         .testimonial-text {
-            font-style: italic;
             margin-bottom: 20px;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
         }
         
         .testimonial-author {
-            font-weight: 600;
-            color: var(--dark);
+            display: flex;
+            align-items: center;
         }
         
-        .stars {
-            color: var(--gold);
-            margin-bottom: 10px;
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
         }
         
-        /* FAQ */
-        .faq {
+        .author-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+        
+        .author-info p {
+            font-size: 14px;
+            color: #777;
+        }
+        
+        /* Countdown & Stats */
+        .countdown-section {
             padding: 60px 0;
-        }
-        
-        .faq h2 {
+            background-color: var(--primary);
+            color: white;
             text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: var(--dark);
         }
         
-        .faq-item {
+        .countdown-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .countdown-title {
+            font-size: 28px;
             margin-bottom: 20px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
         }
         
-        .faq-question {
-            font-weight: 600;
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: var(--dark);
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .countdown-item {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            min-width: 80px;
+        }
+        
+        .countdown-number {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .countdown-label {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: var(--secondary);
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         /* CTA Section */
         .cta-section {
             padding: 80px 0;
+            background-color: var(--light);
             text-align: center;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
         }
         
-        .cta-section h2 {
-            font-size: 36px;
+        .cta-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-title {
+            font-size: 32px;
+            color: var(--primary);
             margin-bottom: 20px;
         }
         
-        .cta-section p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: 0 auto 40px;
+        .cta-subtitle {
+            font-size: 18px;
+            margin-bottom: 30px;
         }
         
-        .big-button {
-            background-color: var(--accent);
-            color: white;
-            padding: 15px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        .price-container {
+            margin-bottom: 30px;
+        }
+        
+        .current-price {
+            font-size: 42px;
+            font-weight: bold;
+            color: var(--sale);
+        }
+        
+        .original-price {
+            font-size: 24px;
+            text-decoration: line-through;
+            color: #777;
+            margin-left: 10px;
+        }
+        
+        .discount-badge {
             display: inline-block;
+            background-color: var(--sale);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+            font-size: 16px;
         }
         
-        .big-button:hover {
-            background-color: var(--dark);
-            transform: translateY(-3px);
-            box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+        .guarantee-badge {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            margin-top: 20px;
+            font-weight: 500;
         }
         
         /* Footer */
         footer {
             background-color: var(--dark);
             color: white;
-            padding: 40px 0 20px;
+            padding: 50px 0 20px;
         }
         
-        .footer-content {
+        .footer-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         
         .footer-column h3 {
+            font-size: 20px;
             margin-bottom: 20px;
-            font-size: 18px;
+            color: var(--secondary);
         }
         
-        .footer-column ul {
+        .footer-links {
             list-style: none;
         }
         
-        .footer-column ul li {
+        .footer-links li {
             margin-bottom: 10px;
         }
         
-        .footer-column ul li a {
+        .footer-links a {
             color: #ccc;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s;
         }
         
-        .footer-column ul li a:hover {
-            color: white;
+        .footer-links a:hover {
+            color: var(--secondary);
         }
         
         .social-links {
             display: flex;
             gap: 15px;
+            margin-top: 20px;
         }
         
         .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
             color: white;
-            font-size: 20px;
-            transition: color 0.3s ease;
+            transition: all 0.3s;
         }
         
         .social-links a:hover {
-            color: var(--primary);
+            background-color: var(--secondary);
+            transform: translateY(-3px);
         }
         
         .copyright {
             text-align: center;
             padding-top: 20px;
-            border-top: 1px solid #444;
-            color: #aaa;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             font-size: 14px;
+            color: #aaa;
         }
         
-        /* Popup */
-        .popup {
+        /* Floating CTA */
+        .floating-cta {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-            max-width: 300px;
-            transform: translateY(150%);
-            transition: transform 0.5s ease;
-            z-index: 1000;
-        }
-        
-        .popup.show {
-            transform: translateY(0);
-        }
-        
-        .popup-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            z-index: 99;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            margin-bottom: 10px;
-        }
-        
-        .popup-close {
-            background: none;
-            border: none;
-            font-size: 20px;
             cursor: pointer;
-            color: var(--text);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.5s;
         }
         
-        .popup-content {
-            display: flex;
-            align-items: center;
+        .floating-cta.show {
+            transform: translateY(0);
+            opacity: 1;
         }
         
-        .popup-img {
-            width: 60px;
-            height: 60px;
-            border-radius: 5px;
-            margin-right: 15px;
-            object-fit: cover;
+        .floating-cta i {
+            margin-right: 10px;
+            font-size: 20px;
         }
         
-        .popup-text {
-            font-size: 14px;
-        }
-        
-        .popup-text strong {
-            color: var(--accent);
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
+        /* Responsive Styles */
+        @media (max-width: 992px) {
             .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero-content {
+                padding: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero {
+                height: auto;
+                padding: 80px 0;
+            }
+            
+            .hero-content {
+                max-width: 100%;
+            }
+            
+            .countdown {
+                flex-wrap: wrap;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .cta-container {
+                padding: 30px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .section-title h2 {
+                font-size: 28px;
+            }
+            
+            .countdown-item {
+                min-width: 60px;
+                padding: 10px;
+            }
+            
+            .countdown-number {
+                font-size: 24px;
+            }
+            
+            .current-price {
                 font-size: 32px;
             }
             
-            .hero p {
+            .original-price {
                 font-size: 18px;
             }
             
-            .price-container {
-                padding: 15px 30px;
+            .discount-badge {
+                font-size: 14px;
             }
             
-            .original-price {
-                font-size: 20px;
-            }
-            
-            .discounted-price {
-                font-size: 28px;
+            .cta-title {
+                font-size: 24px;
             }
         }
     </style>
@@ -452,238 +661,280 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container header-content">
-            <div class="logo">Abaya Qismina</div>
-            <a href="#order" class="cta-button">Pesan Sekarang</a>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-gem"></i>
+                NAVASTORE.CASE
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Fitur</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#order">Pesan Sekarang</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
-    
+
     <!-- Hero Section -->
     <section class="hero">
+        <img src="https://cdn.orderonline.id/uploads/images_3459571722950663000.jpg" alt="Premium Wood Case" class="hero-bg">
         <div class="container">
-            <h1>Abaya Qismina Dewasa Muslimah</h1>
-            <p>Elegant & Luxury - Tampil anggun dengan detail bordir emas premium yang mewah</p>
-            
-            <div class="price-container">
-                <span class="original-price">Rp445.000</span>
-                <span class="discounted-price">Rp245.000</span>
-                <span class="discount-badge">Diskon 45%</span>
-            </div>
-            
-            <div class="countdown" id="countdown">
-                Promo berakhir dalam: 23:59:59
-            </div>
-            
-            <a href="#order" class="cta-button">Dapatkan Sekarang</a>
-        </div>
-    </section>
-    
-    <!-- Product Gallery -->
-    <section class="gallery">
-        <div class="container">
-            <h2>Galeri Produk</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_6217421750595683690.jpeg" alt="Abaya Qismina Model 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_5151491750595682922.jpeg" alt="Abaya Qismina Model 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_8080851750595683993.jpeg" alt="Abaya Qismina Model 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_6839561750595683944.jpeg" alt="Abaya Qismina Model 4">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_8897541750595682978.jpeg" alt="Abaya Qismina Model 5">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_4829401750595682954.jpeg" alt="Abaya Qismina Model 6">
-                </div>
+            <div class="hero-content">
+                <h1>Premium Wood Case - Perlindungan Mewah untuk Perangkat Anda</h1>
+                <p>Dibuat dengan kayu pilihan berkualitas tinggi, memberikan perlindungan maksimal dengan sentuhan elegan yang tak tertandingi.</p>
+                <a href="#order" class="cta-button">PESAN SEKARANG</a>
             </div>
         </div>
     </section>
-    
-    <!-- Features -->
-    <section class="features">
+
+    <!-- Features Section -->
+    <section class="features" id="features">
         <div class="container">
-            <h2>Keunggulan Abaya Qismina</h2>
-            <div class="feature-grid">
-                <div class="feature-item">
+            <div class="section-title">
+                <h2>Keunggulan Premium Wood Case</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-tshirt"></i>
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Bahan Premium</h3>
-                    <p>Dibuat dari bahan Chiffon Rose yang ringan dan mengalir anggun, dilapisi sepenuhnya dengan jersey lembut untuk kenyamanan maksimal.</p>
+                    <h3>Perlindungan Maksimal</h3>
+                    <p>Didesain khusus untuk melindungi perangkat Anda dari benturan, goresan, dan kerusakan sehari-hari.</p>
                 </div>
-                <div class="feature-item">
+                <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-spa"></i>
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Material Kayu Premium</h3>
+                    <p>Terbuat dari kayu pilihan yang tahan lama dan memiliki tekstur alami yang indah.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
                     </div>
                     <h3>Desain Elegan</h3>
-                    <p>Potongan A-line yang mengalir indah saat Anda berjalan dengan desain lapisan ruffle yang menciptakan siluet yang anggun.</p>
+                    <p>Memberikan kesan mewah dan profesional yang membuat perangkat Anda terlihat lebih istimewa.</p>
                 </div>
-                <div class="feature-item">
+                <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-crown"></i>
+                        <i class="fas fa-heart"></i>
                     </div>
-                    <h3>Detail Mewah</h3>
-                    <p>Detail bordir emas premium di ujung lengan dan lapisan abaya menambahkan sentuhan mewah namun halus.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-gift"></i>
-                    </div>
-                    <h3>Paket Lengkap</h3>
-                    <p>Dilengkapi dengan syal tangan yang serasi, terbuat dari kain yang sama dan dihiasi dengan aksen emas.</p>
+                    <h3>Ramah Lingkungan</h3>
+                    <p>Material alami yang biodegradable dan diproses secara bertanggung jawab.</p>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- Product Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galeri Produk</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://cdn.orderonline.id/uploads/images_3719121704477233483.png" alt="Premium Wood Case Tampak Depan">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.orderonline.id/uploads/images_7851341704477256932.jpg" alt="Premium Wood Case Tampak Samping">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.orderonline.id/uploads/images_3212101704477260910.jpg" alt="Premium Wood Case Detail">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.orderonline.id/uploads/images_9227911704477463792.jpg" alt="Premium Wood Case Penggunaan">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.orderonline.id/uploads/images_2494671704477267892.jpg" alt="Premium Wood Case Packaging">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.orderonline.id/uploads/images_8672361722951751326.jpg" alt="Premium Wood Case Full Set">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Gallery -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
     <!-- Testimonials -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
-            <h2>Apa Kata Pelanggan Kami?</h2>
+            <div class="section-title">
+                <h2>Apa Kata Pelanggan Kami</h2>
+            </div>
             <div class="testimonial-grid">
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Saya sangat puas dengan Premium Wood Case ini. Kualitas kayunya benar-benar premium dan finishing-nya sangat halus. Case ini membuat smartphone saya terlihat sangat elegan dan berbeda dari yang lain."
                     </div>
-                    <p class="testimonial-text">"Abayanya sangat nyaman dipakai dan bahannya adem. Bordir emasnya bikin tampilan jadi lebih mewah. Recomended banget!"</p>
-                    <p class="testimonial-author">- Siti Aisyah, Jakarta</p>
+                    <div class="testimonial-author">
+                        </div>
+                        <div class="author-info">
+                            <h4>Andi Wijaya</h4>
+                            <p>Pengusaha, Jakarta</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Sejak menggunakan Premium Wood Case, banyak kolega yang bertanya dimana saya membelinya. Desainnya yang unik dan material kayu alami memberikan kesan profesional sekaligus stylish. Sangat recommended!"
                     </div>
-                    <p class="testimonial-text">"Pas banget buat acara pernikahan teman. Banyak yang nanya beli dimana. Pelayanannya juga cepat dan ramah."</p>
-                    <p class="testimonial-author">- Rina Dewi, Bandung</p>
+                    <div class="testimonial-author">
+                        </div>
+                        <div class="author-info">
+                            <h4>Dewi Lestari</h4>
+                            <p>Manajer Marketing, Bandung</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Saya biasanya sering ganti-ganti case karena cepat bosan, tapi Premium Wood Case ini sudah 6 bulan saya pakai dan masih terlihat seperti baru. Kualitasnya benar-benar bagus dan tahan lama."
                     </div>
-                    <p class="testimonial-text">"Desainnya feminin banget dan jatuhnya pas di badan. Udah beli 2 warna karena diskonnya menggiurkan."</p>
-                    <p class="testimonial-author">- Maya Fitriani, Surabaya</p>
+                    <div class="testimonial-author">
+                        </div>
+                        <div class="author-info">
+                            <h4>Budi Santoso</h4>
+                            <p>Dokter, Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Sebagai pecinta produk alam, saya sangat menghargai material kayu alami yang digunakan pada case ini. Selain cantik, juga ringan dan nyaman dipegang. Pelayanannya juga cepat dan memuaskan."
+                    </div>
+                    <div class="testimonial-author">
+                        </div>
+                        <div class="author-info">
+                            <h4>Siti Rahayu</h4>
+                            <p>Desainer Interior, Yogyakarta</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <h2>Pertanyaan yang Sering Diajukan</h2>
-            <div class="faq-item">
-                <h3 class="faq-question">Apa saja ukuran yang tersedia?</h3>
-                <p>Abaya Qismina tersedia dalam ukuran S, M, L, dan XL dengan cutting yang nyaman dan sesuai untuk tubuh wanita Asia.</p>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="container countdown-container">
+            <h3 class="countdown-title">PROMO SPESIAL HARI INI SAJA!</h3>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdown-hours">12</div>
+                    <div class="countdown-label">Jam</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdown-minutes">45</div>
+                    <div class="countdown-label">Menit</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdown-seconds">30</div>
+                    <div class="countdown-label">Detik</div>
+                </div>
             </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Berapa lama waktu pengiriman?</h3>
-                <p>Waktu pengiriman 2-4 hari kerja untuk wilayah Jawa dan 3-7 hari kerja untuk luar Jawa setelah pembayaran dikonfirmasi.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Apakah bisa return atau tukar ukuran?</h3>
-                <p>Kami menerima penukaran ukuran dalam waktu 7 hari setelah barang diterima dengan syarat tag masih terpasang dan belum dicuci.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Metode pembayaran apa saja yang tersedia?</h3>
-                <p>Kami menerima transfer bank (BCA, Mandiri, BRI), e-wallet (OVO, Dana, ShopeePay), dan pembayaran via gerai retail (Alfamart, Indomaret).</p>
+            <p>Harga akan kembali normal setelah promo berakhir!</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" id="view-counter">1,258</div>
+                    <div class="stat-label">Pengunjung</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="stock-counter">27</div>
+                    <div class="stat-label">Stok Tersisa</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.9</div>
+                    <div class="stat-label">Rating (1,024)</div>
+                </div>
             </div>
         </div>
     </section>
-    
+
     <!-- CTA Section -->
     <section class="cta-section" id="order">
         <div class="container">
-            <h2>Jangan Lewatkan Kesempatan Ini!</h2>
-            <p>Dapatkan Abaya Qismina dengan diskon 45% hanya hari ini. Stok terbatas!</p>
-            
-            <div class="price-container" style="margin-bottom: 30px;">
-                <span class="original-price">Rp445.000</span>
-                <span class="discounted-price">Rp245.000</span>
-                <span class="discount-badge">Diskon 45%</span>
+            <div class="cta-container">
+                <h2 class="cta-title">Premium Wood Case</h2>
+                <p class="cta-subtitle">Lindungi perangkat Anda dengan gaya elegan dan perlindungan maksimal</p>
+                
+                <div class="price-container">
+                    <span class="current-price">Rp 162.500</span>
+                    <span class="original-price">Rp 242.125</span>
+                    <span class="discount-badge">Hemat 33%</span>
+                </div>
+                
+                <!-- Order Form Embed -->
+                <div class="ooef">
+                    <form class="orderonline-embed-form" data-username="nava" data-product-slug="premium-wood-case-1" data-product-id="68640ba291448d374400e06b" id="oo-embed-form-premium-wood-case-1-9804" data-origin="orderonline">
+                        <div class="ooef-loader">
+                            <style>
+                                .ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}
+                                @keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                @-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                .ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}
+                                .ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}
+                                .ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}
+                                @-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                                @keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                            </style>
+                            <div aria-live="polite" role="status"><div>Loading...</div></div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="guarantee-badge">
+                    <i class="fas fa-shield-alt"></i> GARANSI 100% UANG KEMBALI
+                </div>
             </div>
-            
-            <a href="https://nava.orderonline.id/abaya-qismina-dewasa-muslimah" class="big-button">Pesan Sekarang</a>
         </div>
     </section>
-    
+
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Tentang Kami</h3>
-                    <p>Menghadirkan busana muslimah berkualitas tinggi dengan desain elegan dan harga terjangkau.</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Kontak</h3>
-                    <ul>
-                        <li><i class="fas fa-phone"></i> 0852-3669-9497</li>
-                        <li><i class="fas fa-envelope"></i> cs@abayaqismina.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Link Cepat</h3>
-                    <ul>
-                        <li><a href="#order">Pesan Sekarang</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#">Syarat & Ketentuan</a></li>
-                        <li><a href="#">Kebijakan Privasi</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Follow Kami</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                &copy; 2023 Abaya Qismina. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
-    
-    <!-- Popup -->
-    <div class="popup" id="popup">
-        <div class="popup-header">
-            <h4>Promo Spesial!</h4>
-            <button class="popup-close" id="popup-close">&times;</button>
-        </div>
-        <div class="popup-content">
-            <img src="https://cdn.orderonline.id/uploads/images_6217421750595683690.jpeg" alt="Abaya Qismina" class="popup-img">
-            <div class="popup-text">
-                <strong>Diskon 45% Hari Ini!</strong> Dapatkan Abaya Qismina dengan harga Rp245.000 saja. Stok terbatas!
-            </div>
-        </div>
+   <!-- Floating CTA -->
+    <div class="floating-cta" id="floatingCta">
+        <i class="fas fa-shopping-cart"></i>
+        <span>BELI SEKARANG</span>
     </div>
-    
+
     <script>
+        // Gallery Modal
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const galleryItems = document.querySelectorAll(".gallery-item img");
+        const closeBtn = document.getElementsByClassName("close")[0];
+        
+        galleryItems.forEach(item => {
+            item.addEventListener("click", function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            });
+        });
+        
+        closeBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+        
+        window.addEventListener("click", function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+        
         // Countdown Timer
         function updateCountdown() {
             const now = new Date();
             const endOfDay = new Date();
-            endOfDay.setHours(23, 59, 59, 0);
+            endOfDay.setHours(23, 59, 59, 999);
             
             const diff = endOfDay - now;
             
@@ -691,32 +942,135 @@
             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((diff % (1000 * 60)) / 1000);
             
-            document.getElementById('countdown').textContent = 
-                `Promo berakhir dalam: ${Math.floor(hours)}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            document.getElementById("countdown-hours").textContent = Math.floor(hours).toString().padStart(2, '0');
+            document.getElementById("countdown-minutes").textContent = Math.floor(minutes).toString().padStart(2, '0');
+            document.getElementById("countdown-seconds").textContent = Math.floor(seconds).toString().padStart(2, '0');
         }
         
         setInterval(updateCountdown, 1000);
         updateCountdown();
         
-        // Popup
-        setTimeout(() => {
-            document.getElementById('popup').classList.add('show');
-        }, 5000);
+        // Dynamic Counters
+        function animateCounter(element, target, duration) {
+            const start = 0;
+            const increment = target / (duration / 16);
+            let current = start;
+            const counter = function() {
+                current += increment;
+                if (current < target) {
+                    element.textContent = Math.floor(current).toLocaleString();
+                    requestAnimationFrame(counter);
+                } else {
+                    element.textContent = target.toLocaleString();
+                }
+            };
+            counter();
+        }
         
-        document.getElementById('popup-close').addEventListener('click', () => {
-            document.getElementById('popup').classList.remove('show');
+        // Random view counter between 1000-1500
+        const viewCount = Math.floor(Math.random() * 500) + 1000;
+        animateCounter(document.getElementById("view-counter"), viewCount, 2000);
+        
+        // Stock counter decreases every 10 seconds
+        let stockCount = 30;
+        const stockElement = document.getElementById("stock-counter");
+        stockElement.textContent = stockCount;
+        
+        setInterval(() => {
+            if (stockCount > 1) {
+                stockCount -= 1;
+                stockElement.textContent = stockCount;
+            } else if (stockCount === 1) {
+                stockCount = "HABIS";
+                stockElement.textContent = stockCount;
+                stockElement.style.color = "#ff4500";
+            }
+        }, 10000);
+        
+        // Show floating CTA when scrolled
+        window.addEventListener("scroll", function() {
+            const floatingCta = document.getElementById("floatingCta");
+            if (window.pageYOffset > 300) {
+                floatingCta.classList.add("show");
+            } else {
+                floatingCta.classList.remove("show");
+            }
         });
         
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+        // Floating CTA click
+        document.getElementById("floatingCta").addEventListener("click", function() {
+            window.location.href = "#order";
+        });
+        
+        // Mobile menu toggle
+        document.querySelector(".mobile-menu").addEventListener("click", function() {
+            document.querySelector(".nav-links").classList.toggle("show");
+        });
+        
+        // Initialize order form
+        if (typeof xLogError != 'function') {
+            var xLogError = function (error) {
+                var req = new XMLHttpRequest();
+                var payload = JSON.stringify({
+                    url: document.location.href,
+                    line: error.line,
+                    stack: error.stack
                 });
+                var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                req.open('POST', 'https://api.orderonline.id/log', true);
+                req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                req.send(params);
+            };
+        }
+        
+        try {
+            if (typeof xEmbedScript != 'function') {
+                var xEmbedScript = function () {
+                    !function(w, d, e, v, id, t, s) {
+                        if (d.getElementById(id)) return;
+                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                        s = d.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t, s);
+                    }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                };
+            }
+            
+            if (typeof xEmbedInit != 'function') {
+                var xEmbedInit = function (w, n) {
+                    if (w.ooe) return;
+                    n = w.ooe = function() {
+                        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    };
+                    if (!w._ooe) w._ooe = n;
+                    n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                };
+            }
+            
+            xEmbedInit(window);
+            ooe('setup', 'redirect', 'https://nava.orderonline.id');
+            ooe('init', '5f119cd08dcbdb2737678706', '68640ba291448d374400e06b', '68640ba291448d374400e06c', 'oo-embed-form-premium-wood-case-1-9804', {
+                "mode":"page",
+                "action":"Klik untuk pemesanan",
+                "title":"Form Pemesanan",
+                "triggerPixel":true,
+                "triggerGtm":false
             });
-        });
+            
+            if (!window.jQuery) {
+                !function(w, d, e, v, id, t, s) {
+                    if (d.getElementById(id)) return;
+                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                    t.addEventListener('load', xEmbedScript);
+                    s = d.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t, s);
+                }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+            } else {
+                xEmbedScript();
+            }
+        } catch (e) {
+            xLogError(e);
+            throw e;
+        }
     </script>
 </body>
 </html>
